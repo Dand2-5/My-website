@@ -24,7 +24,7 @@ h2 {
   -ms-grid-columns: 1fr minmax(0, 1200px) 1fr;
       grid-template-columns: 1fr minmax(0, 1200px) 1fr;
   background-color: rgba(5, 0, 0, 0.37);
-      grid-template-areas: '. nav .';
+      grid-template-areas: ". nav .";
   padding: 9px 20px;
 }
 
@@ -69,8 +69,8 @@ nav {
   font-weight: light;
   letter-spacing: 3px;
   text-decoration: none;
-  -webkit-transition: color .3s ease;
-  transition: color .3s ease;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .formWrapper {
@@ -145,22 +145,18 @@ form {
   border-bottom: 2px solid #01c93d;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: -webkit-transform .3s ease;
-  transition: -webkit-transform .3s ease;
-  transition: transform .3s ease;
-  transition: transform .3s ease, -webkit-transform .3s ease;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .name label .content-name {
   position: absolute;
   bottom: 5px;
   left: 0;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.name input:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .name input:focus + .label-name .content-name,
@@ -216,20 +212,16 @@ form {
   border-bottom: 2px solid #01c93d;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .email label .content-name {
   position: absolute;
   bottom: 5px;
   left: 0;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.email input:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .email input:focus + .label-name .content-name,
@@ -289,16 +281,16 @@ form {
   border-bottom: 3px solid #01c93d;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .message label .content-name {
   position: absolute;
   top: 20px;
   left: 0;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .message textarea:focus + .label-name .content-name,
@@ -322,8 +314,8 @@ form {
   border-radius: 3px;
   color: #ffffff;
   font-weight: bold;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   width: 5rem;
   margin-left: auto;
 }
@@ -385,6 +377,13 @@ form {
   .nav__links.open {
     clip-path: circle(1200px at 90% -50%);
     -webkit-clip-path: circle(1200px at 90% -50%);
+  }
+  label {
+    font-size: 9pt;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: lighter;
   }
 }
 

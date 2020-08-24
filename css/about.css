@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
 :root{
-  --accent: #DE677E;
+  --accent: #6967de;
   --light: #B4BFE3;
   --lightText: #97A0BE;
   --dark: #282C34;
@@ -17,7 +17,7 @@
 }
 body{
   background-color: #887278;
-  background-image: linear-gradient(to bottom, #887278,rgb(18, 31, 56))
+  background-image: linear-gradient(to bottom, #0a0a0f,rgb(32, 41, 56), #0a0a0f)
 }
 .navbar{
   display: grid;
@@ -40,7 +40,7 @@ nav{
   margin-left: 40px;
 }
 .nav__link a:hover{
-  color: #da708c;
+  color: var(--accent);
 }
 .navbar-brand{
   height: 3rem;
@@ -52,6 +52,7 @@ nav{
   font-weight: light;
   letter-spacing: 3px;
   text-decoration: none;
+  transition: color .3s ease;
 }
 .container{
   height: 514px;

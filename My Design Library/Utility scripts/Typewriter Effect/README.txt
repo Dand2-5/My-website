@@ -1,0 +1,1 @@
+<span class="txt-type" data-wait="3000" data-words='["Developer", "Artist", "Designer"]'></span>

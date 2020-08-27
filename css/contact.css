@@ -8,7 +8,7 @@
 
 body {
   background: linear-gradient(312deg, #050208, #0d324d);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 h2 {
@@ -26,7 +26,7 @@ h2 {
       grid-template-columns: 1fr minmax(0, 1200px) 1fr;
   background-color: rgba(5, 0, 0, 0.37);
       grid-template-areas: ". nav .";
-  padding: 9px 20px;
+  padding: 11px 20px;
   margin-bottom: 2rem;
 }
 
@@ -57,7 +57,7 @@ nav {
 }
 
 .nav__link a:hover {
-  color: #01c93d;
+  color: #c6cce4;
 }
 
 .navbar-brand {
@@ -65,9 +65,9 @@ nav {
 }
 
 .nav__link a {
-  color: #e2e2e2;
+  color: #97a0be;
   font-family: montserrat;
-  font-size: 12pt;
+  font-size: 14pt;
   font-weight: light;
   letter-spacing: 3px;
   text-decoration: none;
@@ -145,7 +145,7 @@ form {
   bottom: -1px;
   height: 100%;
   width: 100%;
-  border-bottom: 2px solid #01c93d;
+  border-bottom: 2px solid #97a0be;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: -webkit-transform 0.3s ease;
@@ -167,7 +167,7 @@ form {
   -webkit-transform: translateY(-25px);
           transform: translateY(-25px);
   font-size: 14px;
-  color: #01c93d;
+  color: #97a0be;
 }
 
 .name input:focus + .label-name::after,
@@ -213,7 +213,7 @@ form {
   width: 100%;
   left: 0;
   bottom: -1px;
-  border-bottom: 2px solid #01c93d;
+  border-bottom: 2px solid #97a0be;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: all 0.3s ease;
@@ -233,7 +233,7 @@ form {
   -webkit-transform: translateY(-25px);
           transform: translateY(-25px);
   font-size: 14px;
-  color: #01c93d;
+  color: #97a0be;
 }
 
 .email input:focus + label::after,
@@ -256,7 +256,8 @@ form {
   left: 0;
   width: 100%;
   height: 80%;
-  padding-top: 20px;
+  margin-bottom: 5px;
+  padding-top: 10px;
   border: none;
   resize: none;
   outline: none;
@@ -282,7 +283,7 @@ form {
   width: 100%;
   bottom: -1px;
   left: 0;
-  border-bottom: 3px solid #01c93d;
+  border-bottom: 3px solid #97a0be;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: all 0.3s ease;
@@ -299,10 +300,10 @@ form {
 
 .message textarea:focus + .label-name .content-name,
 .message textarea:valid + .label-name .content-name {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
   font-size: 14px;
-  color: #01c93d;
+  color: #97a0be;
 }
 
 .message textarea:focus + .label-name::after,
@@ -312,16 +313,16 @@ form {
 }
 
 .submit {
-  padding: 9px;
-  background-color: #01c93d;
-  border: 1px solid;
+  padding: 12px;
+  background-color: #97a0be;
+  border: none;
   border-radius: 3px;
   color: #ffffff;
   font-weight: bold;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  width: 5rem;
-  margin-left: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .submit:hover {
@@ -363,7 +364,7 @@ form {
     margin: 0;
     left: 0;
     top: 0;
-    background-color: #424752;
+    background-color: #07080f;
     height: 100vh;
     width: 100%;
     -webkit-box-orient: vertical;

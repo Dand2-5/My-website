@@ -1,4 +1,4 @@
-$accent: rgb(1, 201, 61);
+$accent: #97a0be;
 $asdfasd: rgb(180, 54, 54);
 $inputColor: rgb(253, 253, 253);
 * {
@@ -10,7 +10,7 @@ $inputColor: rgb(253, 253, 253);
 body {
   background: linear-gradient(312deg, #050208, #0d324d);
   // background-image: linear-gradient(120deg, #e0c3fc 0%, #330867 100%);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 h2 {
@@ -25,7 +25,7 @@ h2 {
   grid-template-columns: 1fr minmax(0, 1200px) 1fr;
   background-color: rgba(5, 0, 0, 0.37);
   grid-template-areas: ". nav .";
-  padding: 9px 20px;
+  padding: 11px 20px;
   margin-bottom: 2rem;
 }
 nav {
@@ -42,15 +42,15 @@ nav {
   margin-left: 40px;
 }
 .nav__link a:hover {
-  color: $accent;
+  color: #c6cce4;
 }
 .navbar-brand {
   height: 3rem;
 }
 .nav__link a {
-  color: rgb(226, 226, 226);
+  color: #97a0be;
   font-family: montserrat;
-  font-size: 12pt;
+  font-size: 14pt;
   font-weight: light;
   letter-spacing: 3px;
   text-decoration: none;
@@ -196,7 +196,9 @@ form {
     left: 0;
     width: 100%;
     height: 80%;
-    padding-top: 20px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    // margin-bottom: 10px;
     border: none;
     resize: none;
     outline: none;
@@ -233,7 +235,7 @@ form {
 }
 .message textarea:focus + .label-name .content-name,
 .message textarea:valid + .label-name .content-name {
-  transform: translateY(-20px);
+  transform: translateY(-25px);
   font-size: 14px;
   color: $accent;
 }
@@ -242,15 +244,16 @@ form {
   transform: translateX(0);
 }
 .submit {
-  padding: 9px;
+  padding: 12px;
   background-color: $accent;
-  border: 1px solid;
+  border: none;
+  // border: 1px solid;
   border-radius: 3px;
   color: #ffffff;
   font-weight: bold;
   transition: all 0.2s ease-out;
-  width: 5rem;
-  margin-left: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 .submit:hover {
   background-color: rgb(1, 160, 49);
@@ -288,7 +291,7 @@ form {
     margin: 0;
     left: 0;
     top: 0;
-    background-color: rgb(66, 71, 82);
+    background-color: #07080f;
     height: 100vh;
     width: 100%;
     flex-direction: column;

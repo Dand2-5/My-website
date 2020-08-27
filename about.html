@@ -6,7 +6,6 @@
     <title>Doub</title>
     <link rel="icon" href="img/title_bar_icon.png">
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="Doub CSS/doub.css">
     <script data-ad-client="ca-pub-2811205850817597" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body>
@@ -91,14 +90,14 @@
           <h3>Responsive Design</h3>
           <p class="services-sub">Mobile phones now account for more than half of all internet traffic which is why I ensure that all website I develop are responsive; this means that they can adjust to any screen size or device.</p>
         </div>
-        <div class="ser3">
+        <!-- <div class="ser3">
           <h3>E-commerce</h3>
           <p class="services-sub">I utilize powerful platforms and tools to build scalable, purpose driven e-commerce solutions. Your bespoke online store will povide a seamless user experience, that turns leads in to customers.</p>
         </div>
         <div class="ser4">
           <h3>Content management</h3>
-          <p class="services-sub">It's important that you are able to self manage your website from any place at any time, which is why I develop content management systems that gie you control over your website data.</p>
-        </div>
+          <p class="services-sub">It's important that you are able to self manage your website from any place at any time, which is why I develop content management systems that give you control over your website data.</p>
+        </div> -->
         <div class="ser5">
           <h3>Website Management</h3>
           <p class="services-sub">I provide various website management options which include-updating content, backing-up important data, monitoring security and software updates.</p>
@@ -137,10 +136,6 @@
             <a href="about.html" class="footer-link foot-item">About</a>
             <a href="contact.html" class="footer-link foot-item">Contact</a>
           </div>
-          <!-- <div class="blog-update">
-            <p class="foot-sub foot-item">Blog Update</p>
-            <a href="#" class="foot-item"> Is dancing the cure to the covid 19 virus?</a>
-          </div> -->
           <div class="social">
             <p class="foot-sub foot-item">Socials</p>
             <a href="#" class="footer-link foot-item">Facebook</a>
@@ -151,6 +146,14 @@
       </div>
     </div>
     <p class="gamer">&copy; Gamers Guide 2020</p>
-    <script src="js/script.js" charset="utf-8"></script>
+    <script charset="utf-8">
+      var hamburger = document.querySelector(".hamburger");
+      var navlinks = document.querySelector(".nav__links");
+      var links = document.querySelectorAll(".nav__link li");
+
+      hamburger.addEventListener("click", function () {
+        navlinks.classList.toggle('open');
+      });
+    </script>
   </body>
   </html>

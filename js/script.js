@@ -4,6 +4,11 @@ var links = document.querySelectorAll(".nav__link li");
 
 hamburger.addEventListener("click", function () {
   navlinks.classList.toggle("open");
+  document.addEventListener("click", (e) => {
+    if (e.y > innerHeight - navlinks.offsetHeight + 18) {
+      navlinks.classList.remove("open");
+    }
+  });
 });
 const Typewriter = function (txtElement, words, wait = 3000) {
   this.txtElement = txtElement;

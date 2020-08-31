@@ -24,7 +24,15 @@ body {
   overflow: hidden;
 }
 
+.media-socials {
+  display: none;
+}
+
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 9px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,6 +44,7 @@ body {
   min-height: 4rem;
   border-bottom: 0.5px solid #e9e9e9;
   background: #07080f;
+  z-index: 1020;
 }
 
 nav {
@@ -141,6 +150,7 @@ a {
 }
 
 .subtitle {
+  margin-left: 5px;
   font-family: "open sans";
   text-transform: uppercase;
   font-size: 18px;
@@ -150,6 +160,15 @@ a {
   opacity: 0;
   -webkit-animation: gravity 1s forwards 0.3s ease;
           animation: gravity 1s forwards 0.3s ease;
+}
+
+.type {
+  margin-bottom: 1.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--lightText);
+  font-size: 2rem;
 }
 
 .social {
@@ -163,6 +182,7 @@ a {
   position: absolute;
   left: 10px;
   top: 50%;
+  z-index: 2;
 }
 
 .social__item {
@@ -218,8 +238,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90vh;
+  height: 100vh;
   max-height: 1200px;
+  position: relative;
   background: linear-gradient(312deg, #050208, #0d324d);
 }
 
@@ -327,29 +348,41 @@ a {
     -webkit-transform: translateY(-4px);
             transform: translateY(-4px);
   }
+  .media-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 25px;
+    margin-top: 2rem;
+  }
+  .ms-item img {
+    height: 2rem;
+  }
+  .ms-item:first-of-type {
+    margin-right: .5rem;
+  }
   .nav__links {
     position: fixed;
     margin: 0;
-    left: 0;
-    top: 0;
-    background-color: #424752;
-    height: 100vh;
+    right: 0;
+    top: -100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#07080f), to(#000000));
+    background: linear-gradient(to bottom, #07080f, #000000);
+    height: 350px;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    z-index: 1;
-    clip-path: circle(100px at 90% -30%);
-    -webkit-clip-path: circle(100px at 90% -30%);
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    z-index: 1000;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+  }
+  .nav__links li {
+    margin: 20px 30px;
   }
   .nav__links.open {
-    clip-path: circle(1200px at 90% -30%);
-    -webkit-clip-path: circle(1200px at 90% -30%);
+    top: 10vh;
   }
   .nav__links a {
     color: #fff;
